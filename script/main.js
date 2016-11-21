@@ -1,43 +1,55 @@
-/**
- * Created by bzby on 2016/11/21.
- */
-var myHeading = document.querySelector("h1");
-myHeading.innerHTML = "hello world";
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        console.log(1);
+        $("p").append(" <b>Appended text</b>.");
+    });
 
-var myVariable = [1,"BOb",2];
+    $("#btn2").click(function(){
+        console.log(2);
+        for (var i=0;i < 10;i++) {
+            console.log(i);
+            $("ul").append("<li>Appended item</li>")
+        }
+    });
+    $("#btn3").click(function () {
+        console.log(3);
+        $("p").css({"color":"red","background-color":"blue"})
+    });
+    $("#btn4").click(function () {
+        console.log(4);
+        $("p").css({"font-size":"+1"})
+    });
+    $("#btn5").click(function () {
+        console.log(5);
+        $("div").slideDown("slow");
+    });
+    $("#btn6").click(function () {
+        console.log(6);
+        $("div").slideUp("7777",slideUp());
+    });
+    $("#btn7").click(function () {
+        console.log(7);
+        $("div").toggle("slow");
+    });
+    $("#btn8").click(function () {
+        console.log(8);
+        $("div").animate({left:"200px"});
+    });
+    $("#btn9").click(function () {
+        console.log(9);
+        $("div").not(".button").animate({left:"+=200px",with :"toggle",height:"100px",opacity:"0.2"})
+    });
+    $("#btn10").click(function () {
+        console.log(10);
+        console.log($("#btn10").val());
+    });
+    $("#btn11").click(function () {
+        console.log(11);
+        console.log($("#a").attr("href"));
+    });
+});
 
-console.log(myVariable[1]);
+function slideUp() {
+    console.log("done");
 
-console.log("-----------------------_");
-var iceCream = "chocolate";
-function multiply(num1,num2) {
-    return num1 * num2;
-
-}
-console.log(multiply(4, 7));
-console.log(multiply(20, 20));
-console.log("-----------------------_");
-document.querySelector("img").onclick = function () {
-  if (document.querySelector("img").getAttribute("src")==="image/bd_logo1_31bdc765.png"){
-      document.querySelector("img").setAttribute("src","image/nav_logo242.png");
-  } else{
-      document.querySelector("img").setAttribute("src","image/bd_logo1_31bdc765.png")
-  }
-};
-var button = document.querySelector("button");
-button.onclick = function () {
-    setUsername();
-};
-var header = document.querySelector("h1");
-console.log(localStorage.getItem("name"));
-if (!localStorage.getItem("name")){
-    setUsername();
-}else{
-    myHeading.innerHTML = "Mozilla is cool, "+localStorage.getItem("name");
-}
-
-function setUsername() {
-    var myName = prompt("please enter your name");
-    localStorage.setItem("name",myName);
-    myHeading.innerHTML = "Mozilla is cool, "+myName;
 }
