@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="78b70436-9188-4ef5-a4d2-8abb749c1bec" name="ddcc.me" url="http://ddcc.me">
+        <fileTransfer host="ddcc.me" port="22" rootFolder="/home/wwwroot/ddcc.me/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

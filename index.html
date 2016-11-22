@@ -8,35 +8,23 @@
     <script src="script/main.js"></script>
 </head>
 <body>
-<button onclick="addText();">add text</button>
-<button onclick="addAfter();">add text after</button>
-<img src="image/bd_logo1_31bdc765.png">
-
-<div id="removed_div">
-    <p>this is some text</p>
-    <p>this is another text</p>
-
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="right_right"></div>
 </div>
-<div id="import">
-    <p>this is import text</p>
+<div style="overflow:hidden;height: 100px;width: 10px;"></div>
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="right_right"></div>
 </div>
+<div style="overflow:hidden;height: 100px;width: 10px;"></div>
+<div class="container">
 
-<button onclick="remove()">remove element</button>
-<button onclick="addClassFun()">addClass</button>
-<button onclick="function sendRequest() {
-    console.log(1);
-var url ='http://www.w3school.com.cn/ajax/demo_get.asp?t=';
-var xmlHttp = new XMLHttpRequest();
-xmlHttp.onreadystatechange= function(value) {
-  console.log(xmlHttp.readyState);
-}
-xmlHttp.open('GET',url+Math.random());
-xmlHttp.dataType='JSONP';
-xmlHttp.send();
-
-}
-sendRequest()">xmlHttp
-</button>
-
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="right_right"></div>
+</div>
 </body>
 </html>
