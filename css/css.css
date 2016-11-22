@@ -34,3 +34,43 @@
     right:0;
     bottom: 0;
 }
+.topbar{
+    background-color: slateblue;
+    width: 100dppx;
+    height: 100px;
+    padding-top:99px;
+    margin-top: 10px;
+}
+#tab1{
+    background-color: aqua;
+    float: left;
+
+    height: 20px;
+    width: 70px;
+}
+
+#tab2{
+    background-color: aqua;
+    height: 20px;
+    margin-left: 10px;
+    width: 70px;
+    float: left;
+
+}
+#tab3{
+    background-color: aqua;
+    height: 20px;
+    width: 70px;
+    float: left;
+    margin-left: 10px;
+}
+
+.topbar_content{
+    height: 20px;
+    width: 77%;
+    margin-top: 60px;
+    background-color: saddlebrown;
+    padding: 10px;
+    text-align:center;
+    margin-left: 111px;
+}

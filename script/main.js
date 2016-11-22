@@ -22,3 +22,18 @@ function addClassFun() {
     $("#removed_div").toggleClass("import");
     $("#import").toggleClass("blue")
 }
+function topBar_a() {
+    console.log(1);
+    alert("1")
+
+}
+function topBar_b() {
+    console.log(2);
+    alert("2")
+
+}
+function topBar_c() {
+    console.log(3);
+    alert("3")
+
+}
