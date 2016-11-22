@@ -1,55 +1,24 @@
-$(document).ready(function(){
-    $("#btn1").click(function(){
-        console.log(1);
-        $("p").append(" <b>Appended text</b>.");
-    });
+/**
+ * Created by bzby on 2016/11/22.
+ */
+function addText() {
+   var oriText  =  "<p>this is text1</p>";
+   var jQText = $("<p></p>").text("this is text2");
+   var element = document.createElement("p");
+   element.innerHTML= "this is text3";
 
-    $("#btn2").click(function(){
-        console.log(2);
-        for (var i=0;i < 10;i++) {
-            console.log(i);
-            $("ul").append("<li>Appended item</li>")
-        }
-    });
-    $("#btn3").click(function () {
-        console.log(3);
-        $("p").css({"color":"red","background-color":"blue"})
-    });
-    $("#btn4").click(function () {
-        console.log(4);
-        $("p").css({"font-size":"+1"})
-    });
-    $("#btn5").click(function () {
-        console.log(5);
-        $("div").slideDown("slow");
-    });
-    $("#btn6").click(function () {
-        console.log(6);
-        $("div").slideUp("7777",slideUp());
-    });
-    $("#btn7").click(function () {
-        console.log(7);
-        $("div").toggle("slow");
-    });
-    $("#btn8").click(function () {
-        console.log(8);
-        $("div").animate({left:"200px"});
-    });
-    $("#btn9").click(function () {
-        console.log(9);
-        $("div").not(".button").animate({left:"+=200px",with :"toggle",height:"100px",opacity:"0.2"})
-    });
-    $("#btn10").click(function () {
-        console.log(10);
-        console.log($("#btn10").val());
-    });
-    $("#btn11").click(function () {
-        console.log(11);
-        console.log($("#a").attr("href"));
-    });
-});
-
-function slideUp() {
-    console.log("done");
-
+   $("body").prepend(oriText,jQText,element)
+}
+function addAfter() {
+    var text1 = "<b>I </b>";
+    var text2 = $("<i>love </i>");
+    var text3 = document.createElement("big").innerHTML ="JQuery";
+    $("img").after(text1,text2,text3);
+}
+function remove() {
+    $("#removed_div").empty();
+}
+function addClassFun() {
+    $("#removed_div").toggleClass("import");
+    $("#import").toggleClass("blue")
 }
