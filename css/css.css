@@ -10,12 +10,11 @@
     float: none;
     margin-top: 10px;
 }
-.right{
-    background-color: antiquewhite;
-    width:10%;
-    float: left;
+.right_right{
+    background-color: aqua;
+    width: 10%;
+    float: right;
     height: 100px;
-
 }
 .left{
     background-color: black;
@@ -23,9 +22,15 @@
     height: 100px;
     float: left;
 }
-.right_right{
-    float: left;
-    background-color: aqua;
-    width: 10%;
+
+.right{
+    background-color: antiquewhite;
+    width:10%;
+    margin:auto;
+    float: none;
     height: 100px;
+    left:0;
+    top:0;
+    right:0;
+    bottom: 0;
 }
